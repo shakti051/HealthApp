@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.health_app">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/raksha_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_description_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common_package.LoginScreenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Doctor_Side.Activity.Doctor_View_Appointment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_Home_Screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Emergency_Services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_Upload_Medical_Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Medical_Report_View_Upload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DoctorProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Appointment_booked"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Doctor_Side.Activity.Doctor_Generate_Prescription"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Common_package.MPIN_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Doctor_Side.Activity.Doctor_Home_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Doctor_Side.Activity.Doctor_Add_Medicine"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Doctor_Side.Activity.Doctor_add_Pathology"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Doctor_Side.Activity.Doctor_add_Radiology"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Doctor_Side.Activity.Doctor_Refer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".CurrentLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Follow_Up_NewCase.New_Case"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Consultation_History_Prescrption"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Follow_Up_Book_Appointment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.View_Pharmacy_Order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_View_Pharmacy_dispatch_Order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pathology.Activity.UploadYOurDocuments"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_Book_Now"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Follow_Up_NewCase.Follow_Up_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Follow_Up_NewCase.Blank_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_View_Hospital_Visit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_View_Radiology_order_List"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_View_Dispatch_Radiology_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_View_Pathology_Dispatch_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_View_Pathology_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Common_package.OTPAutoVerificationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.Pathology_Home_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.View_History"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pathology.Activity.Pathology_Upload_Document"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.Pathology_Collect_Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.SampleCollection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pathology.Activity.Cancel_by_pathology"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.Pending_Case_OR_refresh_case"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.Pathology_My_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.Pathology_Order_Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pathology.Activity.Pathology_Confirm_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Insurance_Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Medical_Report_Details_Option"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Medical_report_sub_option"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.View_Appointment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Current_Conulation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_Locate_Pathology"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_choose_PickUP_Self"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Locate_Pharmacy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Pharmacy_PickUp_or_Self"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pharmacy.Activity.Pharmacy_Home_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Pharmacy.Activity.Pharmacy_Order_List"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pharmacy.Activity.Rating_To_Delivery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pharmacy.Activity.My_Order_Delievery"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pharmacy.Activity.Transactional_Receipt"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pharmacy.Activity.Pharmacy_Upload_Document"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Pharmacy.Activity.Upload_Bill"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Hospital.Activity.Hospital_Home_Screen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Hospital.Activity.Hospital_Pending_Request"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Hospital.Activity.Hospital_Select_Mode_after_Patient_Select"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Hospital.Activity.Admisssion_Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Hospital.Activity.Discharge_Details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Hospital.Activity.Hospital_View_prescription"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Hospital.Activity.Hospital_View_History"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Locate_Specialist"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Locate_Hospitalisation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_Hospital_Connect_Concierge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Patient_Side_Scrren.Activity.Patient_pathology_choose_PickUP_Self"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Radiology.Activity.Radiology_Home_Screen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.Pathology_Upload_Document"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.Pathology_Collect_Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.SampleCollection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Radiology.Activity.Cancel_by_pathology"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.Pending_Case_OR_refresh_case"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.Pathology_My_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.Pathology_Order_Test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.Pathology_Confirm_Order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Radiology.Activity.View_History"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Pharmacy.Activity.UploadYOurDocuments" />
+        <activity
+            android:name=".rahul.Navigation"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+    </application>
+
+</manifest>

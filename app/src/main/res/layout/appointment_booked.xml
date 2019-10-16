@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/mainLayout_id"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_10dp"
+
+            android:text="@string/appoint_fixed"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:id="@+id/textView" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:text="@string/your_details"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_border"
+                android:orientation="vertical">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="@string/name"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/patientname_id"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Ankit Saxena"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Relation"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/relationTV"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="son"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="@string/DOB"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/DOB_id"
+                            android:background="@drawable/cell_shape"
+                            android:cursorVisible="true"
+                            android:gravity="center_horizontal"
+                            android:inputType="numberDecimal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="31-march-1993"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="@string/employee_id"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/patientEMPTV_id"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="45545"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                </TableLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_5dp"
+            android:text="Venue"
+            android:textColor="@color/red"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:background="@drawable/border_white"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_border"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/padding_10dp"
+                android:paddingTop="@dimen/padding_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/doctorTVID"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="Dr.Ankit Saxena"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/addressTVID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:text="B-58 Street no-4 Bhajanpura,"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <!--<TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:text="Pin Code-10053"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />-->
+
+                <TextView
+                    android:id="@+id/phoneTVID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginTop="@dimen/margin_5dp"
+                    android:text="Phone No-9911330410"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:elevation="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5dp"
+                        android:text="Select Date"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Select Time"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/selectDateTV_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/black_border"
+                        android:drawableLeft="@drawable/calender_icon"
+                        android:gravity="center"
+                        android:text="24/05/2018"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/selectTimeTV_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/black_border"
+                        android:drawableLeft="@drawable/time_icon"
+                        android:gravity="center"
+                        android:text=")10:45AM"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:background="@color/red"
+    android:textStyle="bold"
+    android:id="@+id/homeBTN"
+    android:text="Home"/>
+
+</LinearLayout>

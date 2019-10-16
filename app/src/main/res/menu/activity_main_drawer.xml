@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+         android:id="@+id/nav_manage3"
+             android:icon="@drawable/business_svg"
+         android:title="About Us" />
+         <item
+             android:id="@+id/nav_manage4"
+             android:icon="@drawable/phone_call_svg"
+             android:title="Contact Us" />
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/videoCalling"
+            android:icon="@drawable/video_call"
+            android:title="Video Consultation" />
+        <item
+            android:id="@+id/personal"
+            android:icon="@drawable/business_svg"
+            android:title="Personal Consultation"/>
+    </group>
+
+
+</menu>

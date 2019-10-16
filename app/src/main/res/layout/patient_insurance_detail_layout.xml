@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<include layout="@layout/toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_id1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_5dp"
+            android:elevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_border"
+                android:orientation="vertical">
+
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:stretchColumns="*">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Hospital Grade"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/patientname_id"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Tier A"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Pathology Grade"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/relationTV"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="All"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Pharmacy Grade"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/DOB_id"
+                            android:background="@drawable/cell_shape"
+                            android:cursorVisible="true"
+                            android:gravity="center_horizontal"
+                            android:inputType="numberDecimal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="level 3"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Room Allowed"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/patientEMPTV_id"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Semi private Room"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Specialist Allowed"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:id="@+id/textView6" />
+
+
+                        <TextView
+                            android:id="@+id/patient_aadhaarTV_id"
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Grade A"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Co Payment"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                             android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="10%"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Dental Allowed"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="yes"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:id="@+id/textView7" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Eyes Consultancy"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="Yes"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="PCP Contact"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:background="@drawable/cell_shape"
+                            android:gravity="center_horizontal"
+                            android:paddingBottom="@dimen/padding_10dp"
+                            android:paddingTop="@dimen/padding_10dp"
+                            android:text="09911330410"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</LinearLayout>
